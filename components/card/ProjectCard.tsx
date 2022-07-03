@@ -13,7 +13,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
 }) => {
     return (
         <div
-            className="w-full bg-white shadow-2xl shadow-gray-700/[.1] rounded-xl overflow-hidden group"
+            className="w-full bg-white dark:bg-slate-800 shadow-2xl shadow-gray-700/[.1] dark:shadow-none rounded-xl overflow-hidden group inline-block mb-4"
             key={title}
         >
             <div className="w-full relative">
@@ -57,10 +57,10 @@ const ProjectCard: FC<ProjectCardProps> = ({
             </div>
             <div className="p-4 flex flex-col gap-3">
                 <div className="">
-                    <h1 className="text-gray-700 text-2xl font-source-sans font-semibold">
+                    <h1 className="text-gray-700 dark:text-white text-2xl font-source-sans font-semibold">
                         {title}
                     </h1>
-                    <p className="text-lg text-gray-600">{description}</p>
+                    <p className="text-lg text-gray-600 dark:text-white/[.75]">{description}</p>
                 </div>
                 <div className="flex gap-2 flex-wrap">
                     {techs.map((tech) => (

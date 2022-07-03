@@ -32,11 +32,19 @@ interface Project {
     demoUrl: string
     repoUrl?: string
 }
+interface ContactSectionData extends SectionData {
+    email: string
+    facebook: string
+    github: string
+    linkedin: string
+    discord: string
+}
 interface ContentData {
     bannerSection: BannerSectionData
     aboutSection: AboutSectionData
     skillSection: SkillSectionData
     projectSection: ProjectSectionData
+    contactSection: ContactSectionData
 }
 const contentData: ContentData = {
     bannerSection: {
@@ -78,7 +86,7 @@ const contentData: ContentData = {
             },
             {
                 title: 'Image Finder',
-                description: 'Website for search image source by Pixabay API',
+                description: 'Website for search image source by Pixabay API.',
                 preview: {
                     url: '/images/projects/image-finder-preview.webp',
                     lowresUrl:
@@ -91,9 +99,24 @@ const contentData: ContentData = {
                 repoUrl: 'https://github.com/iceboy1406/image-finder',
             },
             {
+                title: 'Segari Clone',
+                description:
+                    'A clone of segari id website. Its a online shop for vegetable product. And its a freelance project.',
+                preview: {
+                    url: '/images/projects/segari-clone-preview.webp',
+                    lowresUrl:
+                        '/images/projects/segari-clone-preview-lowres.webp',
+                    originalWidth: 970,
+                    originalHeight: 970,
+                },
+                techs: ['HTML', 'SCSS', 'Vanilla JS'],
+                category: ['Freelance Project'],
+                demoUrl: 'https://segari-clone.vercel.app/',
+            },
+            {
                 title: 'Dicoding Notes App',
                 description:
-                    'Simple Notes App. Its also a Dicoding Submission Project for "Learn How To Create Web Application with React" class',
+                    'Simple Notes App. Its also a Dicoding Submission Project for "Learn How To Create Web Application with React" class.',
                 preview: {
                     url: '/images/projects/dicoding-notes-app-preview.webp',
                     lowresUrl:
@@ -110,7 +133,7 @@ const contentData: ContentData = {
             {
                 title: 'Zeitplan',
                 description:
-                    'A landing page of a Schedule App. Its also a Dicoding Submission Project for "Learn Basic of Web Programming"',
+                    'A landing page of a Schedule App. Its also a Dicoding Submission Project for "Learn Basic of Web Programming" class.',
                 preview: {
                     url: '/images/projects/zeitplan-preview.webp',
                     lowresUrl: '/images/projects/zeitplan-preview-lowres.webp',
@@ -122,25 +145,11 @@ const contentData: ContentData = {
                 demoUrl: 'https://zeitplans.vercel.app/',
                 repoUrl: 'https://github.com/iceboy1406/zeitplan',
             },
-            {
-                title: 'Segari Clone',
-                description:
-                    'A clone of segari id website. Its a online shop for vegetable product. And its a freelance project',
-                preview: {
-                    url: '/images/projects/segari-clone-preview.webp',
-                    lowresUrl:
-                        '/images/projects/segari-clone-preview-lowres.webp',
-                    originalWidth: 970,
-                    originalHeight: 970,
-                },
-                techs: ['HTML', 'SCSS', 'Vanilla JS'],
-                category: ['Freelance Project'],
-                demoUrl: 'https://segari-clone.vercel.app/',
-            },
+
             {
                 title: 'CV CSM',
                 description:
-                    'A company profile for a company engaged in the manufacture of gloves. And its a freelance project',
+                    'A company profile for a company engaged in the manufacture of gloves. And its a freelance project.',
                 preview: {
                     url: '/images/projects/cvcsm-preview.webp',
                     lowresUrl: '/images/projects/cvcsm-preview-lowres.webp',
@@ -176,12 +185,36 @@ const contentData: ContentData = {
                     originalWidth: 1364,
                     originalHeight: 758,
                 },
-                techs: ['HTML', 'CSS', 'Vanilaa JS',],
+                techs: ['HTML', 'CSS', 'Vanilla JS'],
                 category: ['Competition Project'],
                 demoUrl: 'https://gohosting.vercel.app/',
                 repoUrl: 'https://github.com/iceboy1406/gohosting',
             },
+            {
+                title: 'Codemy',
+                description:
+                    'A landing page of a Programming Online Course. Its a project for IITC (Intermedia Information Technology Competition) 2021.',
+                preview: {
+                    url: '/images/projects/codemy-preview.webp',
+                    lowresUrl: '/images/projects/codemy-preview-lowres.webp',
+                    originalWidth: 1920,
+                    originalHeight: 1080,
+                },
+                techs: ['HTML', 'CSS', 'Vanilla JS'],
+                category: ['Competition Project'],
+                demoUrl: 'https://codemy.vercel.app/',
+                repoUrl: 'https://github.com/iceboy1406/codemy',
+            },
         ],
+    },
+    contactSection: {
+        label: 'Contacts',
+        title: 'Feel free to reach out',
+        email: 'ekosusilo140604@gmail.com',
+        discord: 'https://discordapp.com/users/785292607063982151',
+        facebook: 'https://www.facebook.com/profile.php?id=100030701887505',
+        github: 'https://github.com/iceboy1406',
+        linkedin: 'https://www.linkedin.com/in/eko-susilo-2262b723b/',
     },
 }
 export default contentData

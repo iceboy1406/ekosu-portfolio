@@ -11,7 +11,7 @@ const BannerSection = () => {
     return (
         <section
             id="banner"
-            className="w-full py-20 flex flex-col-reverse lg:flex-row lg:justify-between items-center gap-8"
+            className="w-full py-12 flex flex-col-reverse lg:flex-row lg:justify-between items-center gap-8"
         >
             <div className="flex flex-col gap-6 sm:items-center lg:basis-6/12">
                 <div className="flex flex-col gap-1">
@@ -26,7 +26,21 @@ const BannerSection = () => {
                         {contentData.bannerSection.downloadButtonCaption}{' '}
                         <FiDownloadCloud className="text-xl" />
                     </ButtonAnchor>
-                    <ButtonAnchor href="#about" theme="secondary">
+                    <ButtonAnchor
+                        href="#about"
+                        theme="secondary"
+                        onClick={(e) => {
+                            e.preventDefault()
+                            const targetElement =
+                                document.querySelector<HTMLElement>('#about')
+                            if (targetElement) {
+                                window.scrollTo(
+                                    0,
+                                    targetElement?.offsetTop - 92
+                                )
+                            }
+                        }}
+                    >
                         {contentData.bannerSection.exploreMoreButtonCaption}
                     </ButtonAnchor>
                 </div>
@@ -38,7 +52,7 @@ const BannerSection = () => {
                     height={'100%'}
                     layout="responsive"
                     loading="eager"
-                    alt='photo profile'
+                    alt="photo profile"
                 />
             </div>
         </section>
