@@ -6,7 +6,7 @@ import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs'
 import {SiDiscord} from 'react-icons/si'
 const ContactSection = () => {
     return (
-        <section className="py-12 flex flex-col gap-6" id='contact'>
+        <section className="py-12 flex flex-col gap-6" id='contact' itemScope itemType='https://schema.org/ContactPage'>
             <article>
                 <SectionLabel value={contentData.contactSection.label} />
                 <SectionTitle value={contentData.contactSection.title} />

@@ -32,6 +32,7 @@ const NavLink: FC<NavLinkProps> = ({ children, target }) => {
     return (
         <li>
             <a
+            itemProp='url'
                 href={target}
                 className={` text-xl ${
                     isActive

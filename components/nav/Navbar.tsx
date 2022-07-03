@@ -7,7 +7,11 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
     return (
         <header className="pt-6 sticky top-0 z-10">
-            <nav className="w-full px-6 py-4 rounded-lg bg-white shadow-3xl flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center dark:bg-slate-800">
+            <nav
+                className="w-full px-6 py-4 rounded-lg bg-white shadow-3xl flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center dark:bg-slate-800"
+                itemScope
+                itemType="https://schema.org/SiteNavigationElement"
+            >
                 <div className="w-full flex items-center justify-between lg:w-fit">
                     <div className="flex gap-2 items-center">
                         <button

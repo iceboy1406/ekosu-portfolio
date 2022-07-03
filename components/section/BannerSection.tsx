@@ -45,7 +45,11 @@ const BannerSection = () => {
                     </ButtonAnchor>
                 </div>
             </div>
-            <div className="w-full lg:w-[400px] rounded-[50px] overflow-hidden">
+            <div
+                className="w-full lg:w-[400px] rounded-[50px] overflow-hidden"
+                itemScope
+                itemType="https://schema.org/photo"
+            >
                 <Image
                     src={'/images/photo-profile.webp'}
                     width="100%"

@@ -8,20 +8,21 @@ import SkillSection from 'components/section/SkillSection'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
+import contentData from 'store/contentData'
 
 const Home: NextPage = () => {
     return (
         <Container>
             <Head>
-                <title>Eko Susilo - Portfolio Website</title>
-                <meta name="description" content="Check my portfolio" />
+                <title>Eko Susilo - {contentData.bannerSection.description}</title>
+                <meta name="description" content={contentData.aboutSection.description} />
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
                 <meta
                     property="og:title"
                     content="Eko Susilo - Portfolio Website"
                 />
-                <meta property="og:description" content="Check my portfolio" />
+                <meta property="og:description" content={contentData.aboutSection.description} />
                 <meta
                     property="og:url"
                     content="https://ekosusilo.vercel.app/"
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
                     property="og:image"
                     content="https://raw.githubusercontent.com/iceboy1406/ekosu-portfolio/main/public/images/screenshot.jpg"
                 />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             </Head>
             <Navbar />
             <BannerSection />

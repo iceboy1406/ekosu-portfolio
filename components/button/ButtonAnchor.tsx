@@ -25,6 +25,7 @@ const ButtonAnchor: FC<ButtonAnchorProps> = ({
     })()
     return (
         <a
+        itemProp='url'
             className={`flex gap-2 justify-center px-7 py-3 rounded transition-all duration-300 ${themeStyle} ${className}`}
             href={href}
             download={download}

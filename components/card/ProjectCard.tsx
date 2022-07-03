@@ -15,6 +15,8 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <li
             className="w-full bg-white dark:bg-slate-800 shadow-2xl shadow-gray-700/[.1] dark:shadow-none rounded-xl overflow-hidden group inline-block mb-4"
             key={title}
+            itemScope
+            itemType='https://schema.org/WebSite'
         >
             <div className="w-full relative">
                 <Image

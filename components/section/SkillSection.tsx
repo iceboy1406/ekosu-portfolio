@@ -13,7 +13,7 @@ import contentData from 'store/contentData'
 
 const SkillSection = () => {
     return (
-        <section id="skill" className="flex flex-col gap-6 py-12 items-center">
+        <section id="skill" className="flex flex-col gap-6 py-12 items-center" itemScope itemType='https://schema.org/skills'>
             <article className="flex flex-col gap-1 text-center">
                 <SectionLabel value={contentData.skillSection.label} />
                 <SectionTitle value={contentData.skillSection.title} />
