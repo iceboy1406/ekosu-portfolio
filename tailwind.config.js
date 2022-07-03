@@ -366,7 +366,7 @@ module.exports = {
         },
         fontFamily: {
             sans: [
-                'Source Sans Pro',
+                'Nunito',
                 'ui-sans-serif',
                 'system-ui',
                 '-apple-system',

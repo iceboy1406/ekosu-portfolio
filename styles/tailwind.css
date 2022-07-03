@@ -6,8 +6,8 @@
 @layer {
     * {
         word-break: break-word;
-        font-family: 'Nunito', sans-serif;
         scroll-behavior: smooth;
+        font-family: 'Nunito', sans-serif;
     }
     body {
         @apply bg-gray-50;
@@ -29,5 +29,10 @@
         /* change div to reference your elements you put in <Masonry> */
         background: grey;
         margin-bottom: 16px;
+    }
+}
+@layer {
+    .font-source-sans {
+        font-family: 'Source Sans Pro';
     }
 }

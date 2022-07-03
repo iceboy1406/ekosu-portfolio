@@ -57,7 +57,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             </div>
             <div className="p-4 flex flex-col gap-3">
                 <div className="">
-                    <h1 className="text-gray-700 text-2xl font-sans font-semibold">
+                    <h1 className="text-gray-700 text-2xl font-source-sans font-semibold">
                         {title}
                     </h1>
                     <p className="text-lg text-gray-600">{description}</p>
