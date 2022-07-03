@@ -14,15 +14,23 @@ const Home: NextPage = () => {
     return (
         <Container>
             <Head>
-                <title>Eko Susilo - {contentData.bannerSection.description}</title>
-                <meta name="description" content={contentData.aboutSection.description} />
+                <title>
+                Eko Susilo - A passionate Frontend Developer - Portfolio Website
+                </title>
+                <meta
+                    name="description"
+                    content={`My name is Eko Susilo. I am a fresh graduate from SMK N 1 Purwokerto majoring in Software Engineering. I love programming especially in Frontend Dev.`}
+                />
                 <meta name="robots" content="index,follow" />
                 <meta name="googlebot" content="index,follow" />
                 <meta
                     property="og:title"
-                    content="Eko Susilo - Portfolio Website"
+                    content="Eko Susilo - A passionate Frontend Developer - Portfolio Website"
                 />
-                <meta property="og:description" content={contentData.aboutSection.description} />
+                <meta
+                    property="og:description"
+                    content={`My name is Eko Susilo. I am a fresh graduate from SMK N 1 Purwokerto majoring in Software Engineering. I love programming especially in Frontend Dev.`}
+                />
                 <meta
                     property="og:url"
                     content="https://ekosusilo.vercel.app/"
@@ -31,7 +39,6 @@ const Home: NextPage = () => {
                     property="og:image"
                     content="https://raw.githubusercontent.com/iceboy1406/ekosu-portfolio/main/public/images/screenshot.jpg"
                 />
-                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             </Head>
             <Navbar />
             <BannerSection />
