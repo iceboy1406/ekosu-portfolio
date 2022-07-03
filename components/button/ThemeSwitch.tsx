@@ -12,7 +12,8 @@ const ThemeSwitch = () => {
         })
     }, [])
     return (
-        <button
+        <button 
+        aria-label='Theme Switcher'
             className="text-2xl text-gray-600 dark:text-white"
             onClick={() => {
                 setIsDark(!isDark)
