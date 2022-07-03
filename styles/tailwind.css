@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer base {
     * {
         word-break: break-word;
         scroll-behavior: smooth;
