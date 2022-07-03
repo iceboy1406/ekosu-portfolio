@@ -27,6 +27,7 @@ const AboutSection = () => {
                     height={'100%'}
                     layout="responsive"
                     loading="eager"
+                    alt='programmer'
                 />
             </div>
         </section>

@@ -38,6 +38,7 @@ const BannerSection = () => {
                     height={'100%'}
                     layout="responsive"
                     loading="eager"
+                    alt='photo profile'
                 />
             </div>
         </section>

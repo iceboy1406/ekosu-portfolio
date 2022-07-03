@@ -19,6 +19,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             <div className="w-full relative">
                 <Image
                     src={preview.url}
+                    alt={title + ' project preview'}
                     width="100%"
                     height={`${
                         (preview.originalHeight / preview.originalWidth) * 100
@@ -36,6 +37,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                             href={repoUrl}
                             target="_blank"
                             className="text-4xl text-white"
+                            rel="noreferrer"
                         >
                             <BsGithub />
                         </a>
@@ -47,6 +49,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                         href={demoUrl}
                         target="_blank"
                         className="text-4xl text-white"
+                        rel="noreferrer"
                     >
                         <BsEyeFill />
                     </a>
