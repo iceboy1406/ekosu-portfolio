@@ -14,10 +14,10 @@ import contentData from 'store/contentData'
 const SkillSection = () => {
     return (
         <section id="skill" className="flex flex-col gap-6 py-12 items-center">
-            <div className="flex flex-col gap-1 text-center">
+            <article className="flex flex-col gap-1 text-center">
                 <SectionLabel value={contentData.skillSection.label} />
                 <SectionTitle value={contentData.skillSection.title} />
-            </div>
+            </article>
             <div className="flex gap-6 flex-wrap justify-center">
                 <HTML className="h-24" />
                 <CSS className="h-24 w-24" />

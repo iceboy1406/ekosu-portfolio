@@ -14,13 +14,13 @@ const BannerSection = () => {
             className="w-full py-12 flex flex-col-reverse lg:flex-row lg:justify-between items-center gap-8"
         >
             <div className="flex flex-col gap-6 sm:items-center lg:basis-6/12">
-                <div className="flex flex-col gap-1">
+                <article className="flex flex-col gap-1">
                     <SectionLabel value={contentData.bannerSection.label} />
                     <SectionTitle value={contentData.bannerSection.title} />
                     <SectionDescription
                         value={contentData.bannerSection?.description ?? ''}
                     />
-                </div>
+                </article>
                 <div className="flex flex-col gap-2 sm:flex-row sm:w-full">
                     <ButtonAnchor href="/images/cv.jpg" download>
                         {contentData.bannerSection.downloadButtonCaption}{' '}

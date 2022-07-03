@@ -7,10 +7,10 @@ import {SiDiscord} from 'react-icons/si'
 const ContactSection = () => {
     return (
         <section className="py-12 flex flex-col gap-6" id='contact'>
-            <div className="">
+            <article>
                 <SectionLabel value={contentData.contactSection.label} />
                 <SectionTitle value={contentData.contactSection.title} />
-            </div>
+            </article>
             <div className="flex flex-col gap-4">
                 <a
                     className="text-2xl text-gray-600 dark:text-white"

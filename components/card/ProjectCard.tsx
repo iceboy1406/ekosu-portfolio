@@ -12,7 +12,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
     title,
 }) => {
     return (
-        <div
+        <li
             className="w-full bg-white dark:bg-slate-800 shadow-2xl shadow-gray-700/[.1] dark:shadow-none rounded-xl overflow-hidden group inline-block mb-4"
             key={title}
         >
@@ -56,21 +56,21 @@ const ProjectCard: FC<ProjectCardProps> = ({
                 </div>
             </div>
             <div className="p-4 flex flex-col gap-3">
-                <div className="">
+                <article>
                     <h2 className="text-gray-700 dark:text-white text-2xl font-source-sans font-semibold">
                         {title}
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-white/[.75]">{description}</p>
-                </div>
-                <div className="flex gap-2 flex-wrap">
+                </article>
+                <ul className="flex gap-2 flex-wrap">
                     {techs.map((tech) => (
-                        <p className="px-3 py-1 rounded bg-indigo-400 text-white" key={tech}>
+                        <li className="px-3 py-1 rounded bg-indigo-400 text-white" key={tech}>
                             {tech}
-                        </p>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </div>
-        </div>
+        </li>
     )
 }
 

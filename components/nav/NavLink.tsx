@@ -9,7 +9,7 @@ const NavLink: FC<NavLinkProps> = ({ children, target }) => {
     useEffect(() => {
         const targetElement = document.querySelector<HTMLElement>(target)
         if (targetElement) {
-            if(target === '#banner') {
+            if (target === '#banner') {
                 setIsActive(true)
             }
             window.addEventListener('scroll', () => {
@@ -30,29 +30,31 @@ const NavLink: FC<NavLinkProps> = ({ children, target }) => {
         }
     }, [target])
     return (
-        <a
-            href={target}
-            className={` text-xl ${
-                isActive
-                    ? 'font-semibold text-indigo-500 dark:text-indigo-500'
-                    : 'text-gray-500 dark:text-white/[.75] dark:hover:text-indigo-500'
-            } hover:text-indigo-500`}
-            onClick={(e) => {
-                e.preventDefault()
-                if (document && window) {
-                    const targetElement =
-                        document.querySelector<HTMLElement>(target)
-                    if (targetElement) {
-                        window.scrollTo(
-                            0,
-                            targetElement.offsetTop - headerHeight
-                        )
+        <li>
+            <a
+                href={target}
+                className={` text-xl ${
+                    isActive
+                        ? 'font-semibold text-indigo-500 dark:text-indigo-500'
+                        : 'text-gray-500 dark:text-white/[.75] dark:hover:text-indigo-500'
+                } hover:text-indigo-500`}
+                onClick={(e) => {
+                    e.preventDefault()
+                    if (document && window) {
+                        const targetElement =
+                            document.querySelector<HTMLElement>(target)
+                        if (targetElement) {
+                            window.scrollTo(
+                                0,
+                                targetElement.offsetTop - headerHeight
+                            )
+                        }
                     }
-                }
-            }}
-        >
-            {children}
-        </a>
+                }}
+            >
+                {children}
+            </a>
+        </li>
     )
 }
 

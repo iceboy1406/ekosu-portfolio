@@ -5,7 +5,7 @@ interface NavItemProps {
 }
 const NavItem:FC<NavItemProps> = ({show, children}) => {
   return (
-    <div className={`${show ? 'flex flex-col gap-2' : 'hidden'} lg:flex lg:flex-row lg:items-center lg:gap-4`}>{children}</div>
+    <ul className={`${show ? 'flex flex-col gap-2' : 'hidden'} lg:flex lg:flex-row lg:items-center lg:gap-4`}>{children}</ul>
   )
 }
 
