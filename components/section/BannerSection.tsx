@@ -24,7 +24,7 @@ const BannerSection = () => {
                 <div className="flex flex-col gap-2 sm:flex-row sm:w-full">
                     <ButtonAnchor
                         theme="primary"
-                        href="https://drive.google.com/file/d/11016J_Tut85knb1dXIRzwNweL5nOHPan/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1XLaOCEmnF0Cs9njAqLVJx6oxe_sFfjy6/view?usp=sharing"
                         target={'_blank'}
                         rel="noreferrer"
                     >

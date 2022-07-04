@@ -32,7 +32,7 @@ const Home: NextPage = () => {
                 />
                 <meta
                     property="og:url"
-                    content="https://ekosusilo.vercel.app/"
+                    content="https://eko-susilo.my.id"
                 />
                 <meta
                     property="og:image"
