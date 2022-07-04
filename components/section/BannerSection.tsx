@@ -22,7 +22,12 @@ const BannerSection = () => {
                     />
                 </article>
                 <div className="flex flex-col gap-2 sm:flex-row sm:w-full">
-                    <ButtonAnchor href="/images/cv.jpg" download>
+                    <ButtonAnchor
+                        theme="primary"
+                        href="https://drive.google.com/file/d/11016J_Tut85knb1dXIRzwNweL5nOHPan/view?usp=sharing"
+                        target={'_blank'}
+                        rel="noreferrer"
+                    >
                         {contentData.bannerSection.downloadButtonCaption}{' '}
                         <FiDownloadCloud className="text-xl" />
                     </ButtonAnchor>

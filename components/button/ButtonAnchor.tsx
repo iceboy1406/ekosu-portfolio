@@ -1,22 +1,11 @@
 import React, { FC, MouseEventHandler, ReactNode } from 'react'
-interface ButtonAnchorProps {
-    children: ReactNode
-    onClick?: MouseEventHandler<HTMLAnchorElement>
-    className?: string
-    theme?: 'primary' | 'secondary'
-    href?: string
-    download?: any
+interface ButtonAnchorProps
+    extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    theme: 'primary' | 'secondary'
 }
-const ButtonAnchor: FC<ButtonAnchorProps> = ({
-    children,
-    onClick,
-    className = '',
-    theme = 'primary',
-    href,
-    download,
-}) => {
+const ButtonAnchor: FC<ButtonAnchorProps> = (props: ButtonAnchorProps) => {
     const themeStyle = (() => {
-        switch (theme) {
+        switch (props.theme) {
             case 'primary':
                 return 'bg-indigo-500 text-white hover:bg-indigo-600'
             case 'secondary':
@@ -25,14 +14,10 @@ const ButtonAnchor: FC<ButtonAnchorProps> = ({
     })()
     return (
         <a
-        itemProp='url'
-            className={`flex gap-2 justify-center px-7 py-3 rounded transition-all duration-300 ${themeStyle} ${className}`}
-            href={href}
-            download={download}
-            onClick={onClick}
-        >
-            {children}
-        </a>
+            itemProp="url"
+            className={`flex gap-2 justify-center px-7 py-3 rounded transition-all duration-300 ${themeStyle} ${props.className}`}
+            {...props}
+        />
     )
 }
 
