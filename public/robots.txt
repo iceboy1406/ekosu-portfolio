@@ -2,4 +2,4 @@
 
 User-agent: *
 Disallow: 
-sitemap: https://ekosusilo.vercel.app/sitemap.xml
+sitemap: https://www.susiloeko.my.id/sitemap.xml
