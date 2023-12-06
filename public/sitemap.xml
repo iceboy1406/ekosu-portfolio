@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://susiloeko.my.id/</loc>
-		<lastmod>2023-12-06T10:43:41+01:00</lastmod>
-		<priority>0.4</priority>
-	</url>
+    <url>
+        <loc>https://susiloeko.my.id</loc>
+        <lastmod>2023-12-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
