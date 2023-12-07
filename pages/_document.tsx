@@ -10,7 +10,7 @@ const Document = () => {
                     href="favicon.ico"
                     type="image/x-icon"
                 />
-                <meta name="google-site-verification" content="z1R4nJ9K4dZ7tix-52NBpttN1fq9wulqlJjsB7XgC8c" />
+                
             </Head>
             <body>
                 <Main />
