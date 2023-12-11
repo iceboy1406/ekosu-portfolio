@@ -32,11 +32,15 @@ const Home: NextPage = () => {
                 />
                 <meta
                     property="og:url"
-                    content="https://eko-susilo.my.id"
+                    content="https://susiloeko.my.id"
                 />
                 <meta
                     property="og:image"
                     content="https://raw.githubusercontent.com/iceboy1406/ekosu-portfolio/main/public/images/screenshot.jpg"
+                />
+                <link
+                    rel="canonical"
+                    href="https://susiloeko.my.id/"
                 />
             </Head>
             <Navbar />
